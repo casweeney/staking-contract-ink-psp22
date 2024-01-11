@@ -4,8 +4,8 @@
 #[openbrush::contract]
 mod staking_contract {
     // use openbrush::contracts::psp22::*;
-    use openbrush::traits::Storage;
     use openbrush::test_utils::*;
+    use openbrush::traits::Storage;
     use openbrush::traits::String;
 
     #[ink(storage)]

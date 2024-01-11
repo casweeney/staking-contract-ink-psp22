@@ -1,5 +1,5 @@
 [package]
-name = "staking_contract"
+name = "psp22"
 version = "0.1.0"
 authors = ["[your_name] <[your_email]>"]
 edition = "2021"
@@ -17,6 +17,7 @@ openbrush = { tag = "4.0.0-beta.1", git = "https://github.com/Brushfam/openbrush
 ink_e2e = "4.3.0"
 
 [lib]
+name = "psp22"
 path = "lib.rs"
 
 [features]
@@ -30,3 +31,6 @@ std = [
 ]
 ink-as-dependency = []
 e2e-tests = []
+
+[profile.release]
+overflow-checks = false
